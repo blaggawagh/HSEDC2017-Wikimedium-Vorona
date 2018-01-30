@@ -1,0 +1,18 @@
+.screen {
+  height: 100vh;
+  display: flex;
+}
+
+.screen p {
+  margin: auto;
+  display: none;
+
+}
+
+.screen .desktop {
+  display: block;
+}
+
+.screen {
+  background-color: #FF4B3E;
+}

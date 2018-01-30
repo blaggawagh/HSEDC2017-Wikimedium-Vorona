@@ -1,0 +1,113 @@
+body {
+  font-family: monospace;
+}
+
+.screen {
+  height: 100vh;
+  display: flex;
+}
+
+
+.screen div {
+  margin: auto;
+  display: none;
+}
+
+.screen .shot{
+  background-position: center;
+  background-size: cover;
+  width: 900px;
+  height: 600px;
+}
+
+.screen .text {
+  border: 2px solid #000;
+  background: #fff;
+  width: 43px;
+  height: 30px;
+  margin-top: 300px;
+  text-align: center;
+
+}
+.screen .iss1 {
+  display: block;
+}
+
+.screen .is1 {
+  background-image: url(../img/we.jpg);
+  display: flex;
+}
+
+@media (max-width: 1100px) {
+  .screen .is1 {
+    display: none;
+  }
+
+  .screen .is2 {
+    background-image: url(../img/are.jpg);
+    display: flex;
+
+  }
+
+  .screen .iss1 {
+    display: none;
+  }
+
+  .screen .iss2 {
+    display: block;
+  }
+}
+
+@media (max-width: 900px) {
+  .screen .is2 {
+    display: none;
+  }
+
+  .screen .is3 {
+    background-image: url(../img/all.jpg);
+    display: flex;
+
+  }
+
+  .screen .iss2 {
+    display: none;
+  }
+
+  .screen .iss3 {
+    display: block;
+  }
+
+@media (max-width: 500px) {
+  .screen .is3 {
+    display: none;
+  }
+
+  .screen .is4 {
+    background-image: url(../img/strangers.jpg);
+    display: flex;
+  }
+
+  .screen .iss3 {
+    display: none;
+  }
+
+  .screen .iss4 {
+    display: block;
+    width: 75px;
+  }
+}
+
+@media (max-width: 300px) {
+  .screen .is4 {
+    display: none;
+  }
+
+  .screen .is5 {
+    background-image: url(../img/uganda.png);
+    display: block;
+  }
+
+  .screen .iss4 {
+    display: none;
+  }
+}

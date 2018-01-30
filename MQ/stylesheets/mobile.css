@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+
+  .screen .desktop {
+    display: none;
+
+  }
+
+
+  .screen .mobile {
+    display: block;
+  }
+
+  .screen {
+    background-color: #FFE548;
+  }
+
+}

@@ -1,0 +1,75 @@
+.gallery {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  margin-left: calc((-100vw + 700px)/2);
+}
+
+.galleryNav {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 51px);
+}
+
+.galleryNav div {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 30px;
+  cursor: cell;
+  z-index: 1;
+}
+
+.galleryNav div::before, .galleryNav div::after {
+  content: '';
+  position: absolute;
+  background: black;
+}
+
+.galleryNav div::before {
+  width: 5px;
+  height: 20px;
+}
+
+.galleryNav div::after {
+  width: 20px;
+  height: 5px;
+}
+
+.galleryNav div#prev {
+  transform: rotate(-45deg);
+
+}
+
+.galleryNav div.disabled {
+  opacity: 0;
+  cursor: default;
+}
+
+.galleryNav div#next {
+  transform: rotate(135deg);
+
+}
+
+.galleryRail figure {
+  width: 100vw;
+  min-width: 100vw;
+}
+
+.galleryRail img {
+  display: block;
+  width: 1020px;
+  margin: 0 auto;
+}
+
+
+.galleryRail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}

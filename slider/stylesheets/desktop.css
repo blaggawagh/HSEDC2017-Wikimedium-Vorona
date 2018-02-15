@@ -1,0 +1,33 @@
+.screen {
+  height: 100vh;
+  display: flex;
+
+}
+
+
+.slider {
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%;-50%); */
+  background: silver;
+}
+
+.slider  div {
+  height: 100%;
+}
+
+
+.slider-item-1 {
+  background: red;
+}
+
+.slider-item-2 {
+  background: green;
+}
+
+.slider-item-3 {
+  background: blue;
+}

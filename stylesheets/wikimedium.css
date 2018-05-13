@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&subset=cyrillic');
+body {
+  font-family: 'PT Sans Caption', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05);
+  background-color: #FFF;
+
+}
+
+.right {
+  color: rgba(0, 0, 0, 0.3);
+  margin: auto 2%;
+  transition: color .5s ease;
+
+}
+
+.right:hover {
+color: rgba(0, 0, 0, 0.5);
+}
+
+
+h2 {
+  font-size: 36px;
+  line-height: 46px;
+
+}
+
+p {
+  margin-top: 21px;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  border-left: 3px solid rgba(0, 0, 0, .05);
+  border-right: 3px solid rgba(0, 0, 0, .05);
+  width: 1445px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.logo {
+  width: 180px;
+  height: 16px;
+  background-image: url(../img/logo.svg);
+  background-size: cover;
+  background-position: center;
+  margin: auto 0;
+}
+
+
+.section1 {
+  width: 1440px;
+  height: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.textL {
+  height: 500px;
+  width: 580px;
+  margin: 140px 0 0 122px;
+}
+
+.mockup1 {
+  margin-top: 95px;
+  height: 600px;
+  width: 600px;
+  background-image: url(../img/mockup-1.jpg);
+  background-position: left;
+  background-size: cover;
+}
+
+.patternL {
+  width: 220px;
+  height: 50px;
+  margin: 15px 0 0 -50px;
+  background-image: url(../img/pattern.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section2 {
+  width: 1440px;
+  height: 800px;
+  margin: -5% auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textR {
+  margin: 150px 35px 0 0;
+  height: 500px;
+  width: 650px;
+}
+
+.mockup-2 {
+  margin-left: 146px;
+  height: 650px;
+  width: 500px;
+  background-image: url(../img/mockup-2.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.patternR {
+  width: 220px;
+  height: 50px;
+  margin: 15px 0 0 370px;
+  background-image: url(../img/pattern.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.section3 {
+  width: 1440px;
+  height: 100vh;
+  margin: -4% auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.mockup-3 {
+  margin-top: 20px;
+  height: 620px;
+  width: 500px;
+  background-image: url(../img/mockup-3.jpg);
+  background-position: left;
+  background-size: cover;
+}
+
+.section4 {
+  width: 1440px;
+  height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px auto;
+
+}
+
+.section4 div {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.buttons {
+  width: 500px;
+  height: 30px;
+  margin: -60px auto 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button1 {
+  padding: 24px 18px;
+  line-height: 0px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.button2 {
+  padding: 25px 22px;
+  background-color: #2BD42B;
+  color: #FFF;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 100%;
+
+  }
+
+  .section1, .section3 {
+    width: 747px;
+    margin: auto;
+    flex-wrap: wrap-reverse;
+  }
+
+  .textL {
+    margin: auto;
+    height: 240px;
+    width: 475px;
+    text-align: center;
+  }
+
+  .textL h2 {
+    font-size: 35px;
+  }
+  .textL p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 26px;
+  }
+
+  .mockup1, .mockup-2, .mockup-3 {
+    height: 540px;
+    width: 540px;
+    margin: 10px auto;
+
+  }
+
+  .patternL, .patternR {
+    width: 160px;
+    height: 16px;
+    margin: 20px auto;
+  }
+
+  .section2 {
+    width: 747px;
+    margin: auto;
+    flex-wrap: wrap;
+
+  }
+
+  .textR {
+    margin: auto;
+    height: 240px;
+    width: 475px;
+    text-align: center;
+  }
+
+  .textR h2 {
+    font-size: 35px;
+  }
+
+  .textR p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 26px;
+  }
+
+
+  .section4 {
+    width: 747px;
+    margin: 80px auto;
+
+  }
+
+  .section4 div {
+    margin: auto;
+    height: 240px;
+    width: 475px;
+    text-align: center;
+
+  }
+
+  .section4 div h2 {
+    font-size: 35px;
+
+  }
+
+  .section4 div p {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-top: 26px;
+
+
+
+}
+
+  .buttons {
+    width: 747px;
+    margin: -90px auto;
+  }
+
+}
